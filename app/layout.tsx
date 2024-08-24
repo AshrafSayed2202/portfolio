@@ -6,7 +6,7 @@ import { ThemeProvider } from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
-    title: "Ashraf's Portfolio",
+    title: "Ashraf Sayed",
     description: "MERN Stack & Next.JS Developer Portfolio.",
 };
 export default function RootLayout({
