@@ -312,8 +312,8 @@ export const socialMedia = [
     },
     {
         id: 2,
-        img: "/insta.svg",
-        url: "https://www.instagram.com/ashraf_s.fawzi/",
+        img: "/wha.svg",
+        url: "https://wa.me/+201202915160",
     },
     {
         id: 3,
