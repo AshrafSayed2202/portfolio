@@ -214,29 +214,34 @@ export const projects = [
 
 export const testimonials = [
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        quote: "Collaborating with Ashraf was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
         name: "Michael Johnson",
         title: "Director of AlphaStream Technologies",
+        profileImg: "/profile.svg",
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "Working with Ashraf was an absolute pleasure. His expertise in React and attention to detail brought our project to life in ways we hadn't imagined. He's not just a developer; he's a problem-solver who always exceeds expectations.",
+        name: "David Thompson",
+        title: "CTO at Innovatech",
+        profileImg: "/profile.svg",
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "Ashraf's work is top-notch. His ability to understand our needs and translate them into a seamless, responsive interface was impressive. His commitment to delivering on time and his proactive communication made the whole process smooth and successful.",
+        name: "Maria Garcia",
+        title: "Product Manager at Digital Wave",
+        profileImg: "/profile.svg",
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "Ashraf has an exceptional talent for front-end development with React. His clean code and innovative solutions contributed significantly to our project's success. His collaborative approach and professionalism are commendable.",
+        name: "Akio Tanaka",
+        title: "Lead Developer at Tech Giants",
+        profileImg: "/profile.svg",
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "Ashraf delivered beyond our expectations. His proficiency in React and his dedication to crafting a user-friendly interface were instrumental in our project's success. I highly recommend him for any front-end development needs.",
+        name: "Fatima Al-Mansouri",
+        title: "CEO at Web Innovators",
+        profileImg: "/profile.svg",
     },
 ];
 
@@ -283,7 +288,7 @@ export const workExperience = [
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
+        title: "Mobile App Dev",
         desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
         className: "md:col-span-2",
         thumbnail: "/exp2.svg",

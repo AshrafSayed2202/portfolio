@@ -1,21 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
-
-import { FaLocationArrow } from "react-icons/fa6";
-
-import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
+import { useEffect, useState } from 'react';
+import { FaLocationArrow } from 'react-icons/fa6';
+import { projects } from '@/data';
+import { PinContainer } from './ui/Pin';
 
 const RecentProjects = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null; // Or return a loading indicator
+  }
+
   return (
     <section className="py-20" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">my Projects</span>.
+        A small selection of <span className="text-purple">my Projects</span>.
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <a href={item.url} key={item.id} target="_blanc">
+          <a href={item.url} key={item.id} target="_blank" rel="noopener noreferrer">
             <div
               className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             >
@@ -55,8 +62,7 @@ const RecentProjects = () => {
                         key={index}
                         className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
-                          transform: `translateX(-${5 * index + 2
-                            }px)`,
+                          transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
                         <img
