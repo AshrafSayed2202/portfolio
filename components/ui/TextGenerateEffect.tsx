@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
@@ -25,7 +26,6 @@ export const TextGenerateEffect = ({
       }
     );
   }, [scope.current]);
-
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
@@ -33,7 +33,6 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              // change here if idx is greater than 3, change the text color to #CBACF9
               className={` ${idx > 3 ? "text-purple" : "dark:text-white text-black"
                 } opacity-0`}
             >
@@ -44,12 +43,9 @@ export const TextGenerateEffect = ({
       </motion.div>
     );
   };
-
   return (
     <div className={cn("font-bold", className)}>
-      {/* mt-4 to my-4 */}
       <div className="my-4">
-        {/* remove  text-2xl from the original */}
         <div className=" dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
         </div>

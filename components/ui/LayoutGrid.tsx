@@ -11,34 +11,26 @@ type Card = {
   className: string;
   thumbnail: string;
 };
-
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
-
   const handleClick = (card: Card) => {
     setLastSelected(selected);
     setSelected(card);
   };
-
   const handleOutsideClick = () => {
     setLastSelected(selected);
     setSelected(null);
   };
-
   return (
-    // change md:grid-cols-3 to md:grid-cols-4, gap-4 to gap-10
     <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-4 max-w-7xl mx-auto gap-10 ">
       {cards.map((card, i) => (
         <Button
           key={i}
           borderRadius="1.75rem"
-          //   default is 2000
           duration={10000}
-          //   add className={cn(card.className, "")}
           className={cn(
             card.className
-            // "bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           )}
         >
           <div
@@ -55,8 +47,8 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
                 selected?.id === card.id
                   ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                   : lastSelected?.id === card.id
-                  ? "z-40 bg-white rounded-xl h-full w-full"
-                  : "bg-white rounded-xl h-full w-full"
+                    ? "z-40 bg-white rounded-xl h-full w-full"
+                    : "bg-white rounded-xl h-full w-full"
               )}
               layout
             >
@@ -77,13 +69,11 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
     </div>
   );
 };
-
 const BlurImage = ({ card }: { card: Card }) => {
   const [loaded, setLoaded] = useState(false);
   return (
     <Image
       src={card.thumbnail}
-      //   change image scale 500 to 100
       height="100"
       width="100"
       onLoad={() => setLoaded(true)}
@@ -95,7 +85,6 @@ const BlurImage = ({ card }: { card: Card }) => {
     />
   );
 };
-
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
   return (
     <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
