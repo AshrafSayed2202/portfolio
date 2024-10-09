@@ -181,7 +181,7 @@ export const projects = [
         img: "/p11.png",
         iconLists: ["/html.svg", "/css.svg", "/js.svg", "/jquery.svg"],
         link: "/tripsdealer.com",
-        url: "https://ashrafsayed2202.github.io/TripsDealer/",
+        url: "https://tripsdealers.com/",
     },
     {
         id: 12,
